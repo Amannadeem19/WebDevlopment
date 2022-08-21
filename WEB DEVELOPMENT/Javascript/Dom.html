@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <button onclick="getName()">
+        Click
+    </button>
+    <div class="name">
+
+    </div>
+
+    
+    <div class="name">
+
+    </div>
+    <script>
+        const getName = () =>{
+            // // by reference 
+            // const name = document.getElementById("name");
+            // name.style.height = "55px";
+            // name.style.width = "80px";
+
+            // name.style.border = "2px red solid";
+
+            // name.style.background = "pink";
+            // name.innerHTML = "Muhammad aman";
+            
+
+            // by function 
+            // document.getElementById("name").innerHTML = "MuHAMMAD AMAN";
+
+
+            // querySelector works on first match like we have to divs but kaam sirf aik par kar rha ah
+
+            document.querySelector(".name").innerHTML = "muhammad aman ";
+        //    console.log(document.querySelectorAll(".name")); //gives number of tags related to .name class
+
+            const count  =  document.getElementsByTagName("button"); //returns collection of tags 
+           count[0].style.background = "lightblue";
+
+        }
+    </script>
+</body>
+</html>

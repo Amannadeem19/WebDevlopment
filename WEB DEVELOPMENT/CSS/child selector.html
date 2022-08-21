@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Child selector </title>
+
+    <!-- in child selector, the parent gives info to only their direct childs -->
+    
+    <style>
+        #a > p{
+            width: 400px;
+            height: 400px;
+            background-color: lightcoral;
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="a">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ducimus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ducimus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ducimus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ducimus?</p>
+        <div id="b">
+            <p>heheh boi</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>

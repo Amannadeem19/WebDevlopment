@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Writing Events</title>
+</head>
+<body>
+    <button id="a" onclick="alert('alert method is called')" >Alert Method</button> <br>
+    <button id="b" onclick="callingFunction()">Calling function</button> <br>
+    <button id="c" >Inline Events</button> <br>
+    <button id="d">listener Events</button>
+    
+    <script>
+
+        // 2nd method 
+        const callingFunction = ()=>{
+            alert('hello this is calling function');
+        }
+        // 3rd method inline events - this method overwrites
+
+        const inline = document.getElementById("c");
+        inline.onclick = function() // anonymous function 
+        {
+            alert("hello this is inline event");
+        }
+
+        // 4th method add eventlistener - you can use many times 
+        const eventlisten = document.getElementById("d"); 
+        // eventlisten.addEventListener(eventcalled, functioncall, bubbling)
+        eventlisten.addEventListener('click', () =>{
+          alert("I love this way of writing");  
+        })
+
+        
+    </script>
+</body>
+</html>

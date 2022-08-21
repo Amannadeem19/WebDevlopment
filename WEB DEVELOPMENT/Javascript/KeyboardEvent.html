@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<!-- keyboard events - onkeypress, onkeydown, onkeyup  -->
+<body>
+    
+
+    <input type="text" onkeypress="OnPress()" onkeydown="Ondown()" onkeyup="onUp()">
+
+    <p id="a"></p>
+
+
+    <script>
+        const OnPress =  () =>{
+
+
+
+            const press = document.getElementById("a");
+            press.innerHTML = `you press ${event.key} and the code is ${event.code}`;
+
+        }   
+        const Ondown = () =>{
+            document.getElementById("a").innerHTML = `key is up`;
+
+        }   
+        const onUp = ()=>{
+            document.getElementById("a").innerHTML = `key is down`;
+        } 
+    </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+body{
+   
+    background-color: rgb(255, 181, 181);
+   
+}
+
+#outerbox{
+
+    margin: -550px 200px;
+
+    height: 400px;
+    
+    width: 1000px;
+    background-color: white;
+    border: 10px ;
+    box-shadow: 6px 6px 8px;
+    position: absolute;
+}
+#inner{
+    
+    margin: 70px 270px;
+    /* background-color: grey; */
+    height: 600px;
+    width: 300px;
+    position: relative;
+    border: 10px ;
+    box-shadow: 6px 6px 8px;
+    z-index: 1;
+}
+#inner img{
+
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#outerbox #gen{
+   
+    width: 70px;
+    height: 400px;
+    background-color: lightpink;
+}
+#text{
+    margin: -421px 450px;
+    width: 400px;
+    height: 400px;
+    /* background-color: aqua; */
+    
+}
+#text hr{
+
+    background-color: rgb(255, 106, 106);
+    height: 3px;
+}
+
+#skill{
+    margin: 0 -50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    width: 550px;
+    height: 223px;
+
+}
+#skill1{
+
+    height: 100px;
+    width: 200px;
+    /* background-color: grey; */
+}
+
+#skill2{
+
+    height: 100px;
+    width: 200px;
+    /* background-color: grey; */
+}
+
+
+#heading h1{
+
+    
+    white-space: nowrap;
+    color: rgb(255, 106, 106) ;
+    font-family:'Times New Roman', Times, serif;
+    /* text-decoration: dashed; */
+
+    /* padding: 50px 20px; */
+
+}
+#skill h2{
+
+        
+    white-space: nowrap;
+    color:  rgb(255, 106, 106);
+    font-family:'Times New Roman', Times, serif;
+
+}
+#skill p{
+
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    font-size: large;
+    
+}
+ #heading p{
+
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    font-size: large;
+    /* white-space: nowrap; */
+
+   
+    
+}
+
+#skill skill1 img{
+    width: 100%;
+    height: 100%;
+    
+
+
+}
+
+#skill skill2 img{
+
+    width: 100%;
+    height: 100%;
+}
+
+
+#outerbox a{
+
+    width: 10px;
+    height:10px;
+    margin-top: 10px;
+}
+
+#outerbox  b{
+    height: 10px;
+    width: 10px;
+    margin: 10px 0px;
+}
+#outerbox a img{
+    width: 100%;
+    height: 100%;
+}

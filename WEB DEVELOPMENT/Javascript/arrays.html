@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        const arr = ['aman', 'burhan', 'rayyan', 'dua', 'hamza'];
+        // display the whole array 
+        console.log(arr);
+        let marks = [30, 40, 50, 60];
+        console.log(marks);
+        // console.log(marks[0]);
+       
+        // const array = new Array(20,32, 453, 213);
+        // console.log(array);
+
+        // const mixed_array  = [10, 20, 30, 'aman', [20,39], {one: 1, two: 2}];
+        // console.log(mixed_array[5]);
+        // // get the length of an array
+        // console.log(mixed_array.length);
+
+        // // get_index of the element 
+        // console.log(mixed_array.indexOf(20));
+
+
+        //mutating or modifying thearray //
+        // push add element at the end of the array 
+        marks.push(100);
+        console.log(marks);
+
+        // add element from the beginning //
+
+        marks.unshift(2200);
+        console.log(marks);
+
+        // remove element from the end //
+        marks.pop();
+        console.log(marks);
+
+        // remove elements from the beginning //
+        marks.shift();
+        console.log(marks);
+
+        // splice  remove elements in a range //
+
+        // marks.splice(1,2);
+        // console.log(marks);
+        
+        
+        // slice doesnot change the orginial array //
+       const ar1 =  marks.slice(1,3);
+        console.log(ar1);
+
+        marks.reverse();
+        console.log(marks);
+
+        // concatenate twoo array //
+        // you can not modify array into another you have to use 'let' 
+        let marks2 = [30,40,50];
+        marks = marks.concat(marks2);
+        console.log(marks);
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

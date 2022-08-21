@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <!-- input events 
+    onchange occur when the value has been changed -->
+
+
+    <h1>Your name</h1>
+    <input type="text" name="" id="ice">
+    <h1>select one flavour</h1>
+
+    <select name="icecream" id="icecream">
+
+        <option value="">Select one</option>
+        <option value="Banana">Banana</option>
+        <option value="Vanilla">Vanilla</option>
+        <option value="Mango">Mango</option>
+
+
+    </select>
+    <br>
+    <div id="result">
+
+    </div>
+
+
+    <script>
+        // const SelectItem = () =>{
+
+        // }
+
+        const icecream = document.getElementById('icecream');
+        icecream.addEventListener('change', () =>{
+                
+            const input = document.getElementById('ice').value;
+          
+            const result = document.getElementById('result');
+            result.innerHTML = `Mr. ${input} select ${icecream.value} icecream flavour `;
+            });
+    </script>
+</body>
+</html>

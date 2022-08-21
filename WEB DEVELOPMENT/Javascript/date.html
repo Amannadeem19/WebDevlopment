@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        var date = new Date();
+        console.log(date);
+
+        // convert to string 
+
+        console.log(date.toString());
+
+        // getDate only 
+
+        console.log(date.getDate());
+
+        // getMonth only
+
+        console.log(date.getMonth());
+
+        // get Year
+        console.log(date.getFullYear());
+
+        // gethours
+
+        console.log(date.getHours());
+
+        // getMinutes 
+
+        console.log(date.getUTCMinutes());
+
+        // displaylike hours:mins
+        console.log(date.getHours () + "hrs : " + date.getMinutes()+ "mins");
+
+        var daynames = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+
+        console.log(daynames[date.getDay()]);
+
+
+
+
+        
+
+
+        // miliseconds hain 1970 se lekar ab Tak 
+        console.log( date.getTime());
+
+        var date2 = new Date(); // date storing after some time
+
+        console.log( date2.getTime());
+
+        var comparison = date2.getTime() - date.getTime();
+        console.log(comparison +  " milisecond " );
+
+
+
+        // specific date bh dal sakte ho
+
+        var date3 = new Date("June 30 2035" );
+
+        // isitarhan setDay, setMonth,setFullYear bh ha funtions inorder to chnage the date etc 
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- event object is the parent of the event object 
+for eg: mouseevent, pointerevent, keyboardevent -->
+
+
+<head>
+   
+    <title>Event Object</title>
+</head>
+<body>
+   
+    <button id="b">Click</button>
+    <p id="p"></p>
+    <script>
+
+        const ele = document.getElementById("b");
+        const checkEvent = ()=>{
+            alert('checking event');
+            console.log(event); // display all event properties
+            console.log(event.target); //target html tags 
+            console.log(event.type); // click, onclick etc
+        }
+        ele.addEventListener('click', checkEvent);
+
+    </script>
+</body>
+</html>

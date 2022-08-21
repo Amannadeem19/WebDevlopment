@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Aman's Fitness Club</title>
+    
+</head>
+
+<link rel="stylesheet" href="./CSS/style.css">
+<link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@600&display=swap" rel="stylesheet">
+<style>
+
+
+    /* CSS reset body*/
+
+    body{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(./images/image2.jpg);
+        font-family: 'League Gothic', sans-serif;
+font-family: 'Poppins', sans-serif;
+      
+
+    }
+
+    .left{
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        left: 60px;
+        /* border: 10px solid red; */
+    }
+    .left img{
+        width: 100px;
+       
+
+    }
+    .left div{
+        color: black;
+        text-align: center;
+        font-size: 25px;
+        /* text-decoration: overline; */
+        
+       
+      
+    }
+    .mid{
+        display: block;
+        width: 50%;
+        margin: 10px auto;
+        /* border: 10px solid black; */
+
+    }
+    .right{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        display: inline-block;
+        /* border: 10px solid green; */
+        margin: 5px 0px;
+
+
+    }
+    .btn{
+        margin: 5px 10px;
+       background-color: transparent;
+       color: black;
+       padding: 5px 15px;
+       border: 2px solid black;
+       border-radius: 10px;
+       font-size: 15px;
+       cursor: pointer;
+       font-family: 'League Gothic', sans-serif;
+font-family: 'Poppins', sans-serif;
+      
+    }
+    .btn:hover{
+        background-color: orange;
+        border: 3px solid orange;
+       border-radius: 10px;
+      
+
+    }
+    .navbar{
+
+        display: inline-block;
+    }
+    .navbar li{
+
+        display: inline-block;
+        font-size: 20px;
+        /* background-color: lightsalmon; */
+        /* border: 2px solid antiquewhite;
+        border-radius: 10px;
+        color: orange;
+        text-decoration: overline; */
+        
+    }
+    .navbar li a{
+
+        text-decoration: none;
+        padding: 10px 15px;
+        color: black;
+    }
+    .navbar li a:hover, .navbar li a.active{
+
+        color: orange;
+        text-decoration: overline;
+    }
+    .container{
+        border: 2px solid black;
+    margin: 140px 50px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    width: 40%;
+    }
+    .container h1{
+        color: black;
+        text-align: center;
+    }
+    .form-grp input{
+        margin: 12px auto;
+        padding: 10px 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 440px;
+        font-size: 20px;
+        text-align: center;
+        display: block;
+        font-family: 'League Gothic', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        background-color: transparent;
+
+
+    }
+    .container button{
+
+        width: 460px;
+        margin: 30px auto;
+        padding: 10px 10px;
+        display: block;
+        font-size: 20px;
+
+    }
+    .form-grp input:hover{
+        background-color: orange;
+    }
+    ::placeholder{
+        color: black;
+    }
+
+</style>
+<body>
+    <header>
+        <!-- left for logo  -->
+        <div class="left">
+
+            <img src="./images/logo4.png" alt="">
+
+            <div>
+                Fitness Club.
+            </div>
+
+        </div>
+
+        <!-- mid for navigation menu  -->
+        <div class="mid">
+
+
+            <ul class="navbar">
+
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+
+        <!-- right for buttons -->
+
+        <div class="right">
+
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>
+            Welcome To Pakistan's No.1 Fitness Club
+        </h1>
+     <form action="noaction.php">
+        <div class="form-grp">
+
+            <input type="text" name="" placeholder="Enter Your Name: ">
+        </div>
+
+        <div class="form-grp">
+
+            <input type="text" name="" placeholder="Enter Your Age: ">
+        </div>
+
+        <div class="form-grp">
+
+            <input type="text" name="" placeholder="Enter Your Weight: ">
+        </div>
+
+        <div class="form-grp">
+
+            <input type="text" name="" placeholder="Enter Your Height: ">
+        </div>
+
+        <button class="btn">
+            Submit
+        </button>
+
+
+     </form>
+    </div>
+
+
+
+</body>
+</html>

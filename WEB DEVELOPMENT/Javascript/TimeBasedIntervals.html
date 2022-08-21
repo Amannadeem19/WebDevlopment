@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+
+<!-- // time interval when you want to execute function for some time being 
+
+// two methods of javascript are:
+
+// setTimeout(function, milliseconds)
+// - 
+executes after some time period which you defined like 2-3 hrs but it is executed only once 
+
+// setInterval (function, milliseconds)
+// -- execute function continously after some specific secs or time  -->
+
+
+
+</head>
+<body>
+
+    <h1>Want to Know my name?😎</h1>
+    <h1 id="showName"></h1>
+
+    
+    <button id="btn" > Show !</button>
+
+
+    <script>
+
+        const button = document.getElementById("btn");
+        const myname = document.getElementById("showName");
+
+
+        
+       
+        
+        const showName = ()=>{
+
+                myname.innerHTML = "Loading...";
+
+                const getName = ()=>{
+                    myname.innerHTML = "Muhammad Aman";
+                }
+
+              
+         setTimeout(getName, 3000);
+
+
+        }
+
+        button.addEventListener('click', showName);
+       
+    </script>
+</body>
+</html>

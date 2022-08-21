@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@600&family=Roboto+Slab&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+
+    display: flex;
+}
+.sidebar{
+
+    background-color: lightcoral;
+    width: 10vw;
+    font-family: 'Roboto Slab', serif;
+    height: 100vh;
+}
+.sidebar nav{
+
+    padding: 27px;
+}
+
+.sidebar nav li{
+
+    list-style: none;
+    font-size: 20px;
+    padding: 19px 0px;
+}
+.main-content{
+
+    background-color: aqua;
+    width: 90vw;
+}
+.infoContainer{
+
+    background-color: green;
+    height: 76vh;
+    width: 80vw;
+    margin: 59px auto;
+    display: flex;
+
+}

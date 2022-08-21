@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    
+
+<h1 id="abc">
+
+</h1>
+
+<p class="xyz">
+
+</p>
+<h2>
+
+</h2>
+<h2></h2>
+
+<h2></h2>
+    
+
+<!-- always use scripts at the end of the body or make an external file of scripts and link it with a html file -->
+    <script>
+        // 1st method 
+        document.getElementById("abc").innerHTML = "hello world";
+        document.getElementsByClassName("xyz")[0].innerHTML=  "this is the paragraph....";
+        document.getElementsByTagName("h2")[0].innerHTML = 20;
+        document.getElementsByTagName("h2")[1].innerHTML = 30;
+        document.getElementsByTagName("h2")[2].innerHTML = 40;        
+</script>
+</body>
+</html>

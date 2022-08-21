@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                
+    <title>Live Time</title>
+</head>
+<body>
+
+     <h1>Time right now -> </h1>
+    
+     <button onclick="myfunction()">Press</button>
+
+     <p id="demo"></p>
+     <p id="time"></p>
+     <p id="date"></p>
+
+     <script>
+
+        function myfunction()
+        {
+            var to = new Date(); // all things 
+            var t =  new Date().toLocaleString(); // date time both
+            var date = new Date().toLocaleDateString(); // date only
+            var time = new Date().toLocaleTimeString(); // time only
+
+            // time.setHours(5);
+            document.getElementById("demo").innerHTML = t;
+            document.getElementById("date").innerHTML = date;
+            document.getElementById("time").innerHTML = time;
+
+        }
+     </script>
+</body>
+</html>

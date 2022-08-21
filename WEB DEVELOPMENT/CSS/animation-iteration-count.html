@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- animation me aik style se change hoke dsre style ata ha at certain times  -->
+    <style>
+
+        #a{
+
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            /* animation-name: change;
+            animation-duration: 4s;
+            animation-delay: 2s; */
+
+            /* short hand property  */
+            /* animation: change 4s 2s; */
+            animation: change 4s 2s infinite;
+            /* defines how many times animation works after each load  */
+            /* animation-iteration-count: 4; */
+            /* animation-iteration-count: infinite; */
+
+
+        }
+
+        /* affter every reload animation apply for certain time  */
+        @keyframes change{
+
+            /* from{
+                background-color: azure;
+            }
+             to{
+                 background-color: pink;
+             } */
+
+             0%{background-color: blanchedalmond;}
+             30%{background-color: aquamarine;}
+             50%{background-color: beige;}
+             90%{background-color: yellow;}
+
+        }
+
+    </style>
+
+</head>
+<body>
+   <div id="a">
+
+   </div> 
+</body>
+</html>

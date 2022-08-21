@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Document</title>
+</head>
+
+<style>
+    div{
+        height: 300px;
+        width: 300px;
+        background-color: red;
+    }
+</style>
+<body>
+
+    <div id="a">
+
+
+    </div>
+
+    <script>
+        const mouseEnter = document.getElementById("a");
+        mouseEnter.addEventListener('mouseenter', () =>
+        {
+            mouseEnter.style.backgroundColor = "yellow";
+
+        })
+        const mouseLeave = document.getElementById("a");
+        mouseLeave.addEventListener('mouseleave', ()=>{
+
+            mouseLeave.style.backgroundColor = "red";
+        })
+    </script>
+
+</body>
+</html>
